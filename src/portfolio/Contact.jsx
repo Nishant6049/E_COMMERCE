@@ -12,7 +12,7 @@ const Contact = () => {
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
-        <p>dicta perspiciatis eos, fugit natus iusto assumenda
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis omnis a perferendis accusamus quae eveniet quibusdam iste molestiae quia eum ipsa eligendi, obcaecati impedit voluptate enim expedita necessitatibus quidem tempora! perspiciatis eos, fugit natus iusto assumenda
           neque? Fugiat omnis suscipit quasi illo, corporis autem vitae repellat magni, cumque a at voluptatem
           inventore necessitatibus quibusdam nostrum perspiciatis incidunt error, ut architecto earum nesciunt
           cum? Placeat eaque maiores distinctio.
