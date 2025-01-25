@@ -1,0 +1,18 @@
+.listing li{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-social{
+    gap: 40px;
+    font-size: 70px;
+    margin-bottom: 5px;
+
+}
+.footer-copy p{
+    text-align: right;
+    font-size:x-large;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-right: 30px;
+}

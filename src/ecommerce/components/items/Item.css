@@ -1,0 +1,26 @@
+.title{
+    font-size: larger;
+}
+.item img{
+    border-radius: 7px;
+}
+.item img:hover{
+    scale: calc(1.01);
+}
+.butt{
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.butt:active{
+    background-color: rgb(250, 245, 245);
+    rotate: 2deg;
+    scale:calc(1.02);
+}
+
+.butt:hover{
+    background-color: turquoise;
+}
