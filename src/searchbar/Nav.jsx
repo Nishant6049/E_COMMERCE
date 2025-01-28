@@ -14,7 +14,9 @@ const Nav = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+
+        // const response = await fetch("https://jsonplaceholder.typicode.com/users");
+        const response = await fetch ("https://api.escuelajs.co/api/v1/products");
         const result = await response.json();
         setData(result);
         console.log(result);
@@ -31,7 +33,7 @@ const Nav = () => {
 
     if (value) {
       const filtered = data.filter((item) =>
-        item.name.toLowerCase().includes(value.toLowerCase())
+        item.title.toLowerCase().includes(value.toLowerCase())
       );
       setFilteredData(filtered);
     } else {
@@ -60,11 +62,11 @@ const Nav = () => {
           </div>
           {/* Search Results */}
           {filteredData.length > 0 && (
-            <div className="absolute top-full left-0 w-full bg-white border border-gray-300 rounded-lg mt-1 shadow-lg z-10">
-              <ul>
+            <div className="absolute top-full left-0 w-full bg-white border border-gray-300 rounded-lg mt-1 z-10">
+              <ul className="h-auto overflow-auto">
                 {filteredData.map((user) => (
                   <li key={user.id} className="border-b p-2 hover:bg-gray-100">
-                    {user.name}
+                    {user.title}
                   </li>
                 ))}
               </ul>
