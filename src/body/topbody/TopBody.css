@@ -1,0 +1,12 @@
+.topBody li{
+    padding: 5px;
+    border-radius: 10%;
+}
+.topBody li >hr{
+    border: none;
+    width: 99%;
+    height: 3px;
+    background-color: #FF4141;
+    border-radius: 5px;
+    
+}

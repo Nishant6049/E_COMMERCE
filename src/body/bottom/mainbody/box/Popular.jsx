@@ -1,6 +1,6 @@
 import React from 'react'
 import './Popular.css'
-import Item from '../items/Item'
+import ShopCategory from './ShopCategory'
 import { useState, useEffect } from 'react'
 
 
@@ -19,20 +19,18 @@ useEffect(() => {
   fetchdata();
 
 }, [])  // dependency array
+    return (
+        <div>
+            <div className="popular-item ">
 
+                {data.length > 0 && data.map((item) => {
 
-  return (
-    <div>
-        <div className="popular-item ">
+                    return (<ShopCategory key={item.id} image={item.images[0]} name={item.title} price={item.price} category={item.category} />)
+                })}
 
-            {data.length > 0 && data.map((item) => {
-            
-              return (<Item key={item.id} image = {item.images[0]} name={item.title} price={item.price} category={item.category} />)
-            })}
-
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Popular

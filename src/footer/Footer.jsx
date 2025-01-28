@@ -2,7 +2,6 @@ import React from 'react'
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
 import { FaPinterest } from "react-icons/fa6";
-import logo from '../assets/photo/logo.png'
 import './Footer.css'
 
 
@@ -11,7 +10,7 @@ const Footer = () => {
     <div><hr />
         <div className="topFooter">
             <div className='flex flex-col justify-center items-center'>
-                <img className='mt-12' src={logo} alt="logo" />
+                <img className='mt-12' src="" alt="LOGO" />
                 <h1 className='font-bold text-4xl  underline mb-10'>SHOPPER</h1>
             </div>
             <ul className='listing flex justify-around'>
