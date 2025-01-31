@@ -14,8 +14,8 @@ const Footer = () => {
                 <h1 className='font-bold text-4xl  underline mb-10'>SHOPPER</h1>
             </div>
             <ul className='listing flex justify-around'>
-                <li><a href="">Company</a></li>
-                <li><a href="">Product</a></li>
+                <li><a href="">CompanY</a></li>
+                <li><a href="">ProducT</a></li>
                 <li><a href="">Offices</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
