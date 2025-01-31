@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useContext } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { context } from "../store/Apps";
+import { ShopContext } from "../store/StorageHome";
 
 const Left = () => {
-  const { istrue, setistrue } = useContext(context);
+  const { isTrue, setisTrue } = useContext(ShopContext);
   const [showHamburger, setShowHamburger] = useState(false);
 
   // Add scroll listener
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 100 ||  window.innerWidth < 1000 ) {
         setShowHamburger(true);
       } else {
         setShowHamburger(false);
@@ -24,7 +24,7 @@ const Left = () => {
   }, []);
 
   const handle = () => {
-    setistrue((prev) => !prev);
+    setisTrue((prev) => !prev);
   };
 
   return (
